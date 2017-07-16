@@ -1,0 +1,9 @@
+<h1>All Todos</h1>
+
+<% @todos.each do |todo| %>
+  
+  <ul>
+    <li>Name: <%= link_to todo.name, todo_path(todo) %></li>
+  </ul>
+
+<% end %>
