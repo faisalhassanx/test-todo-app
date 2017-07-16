@@ -5,6 +5,6 @@ resources :todos
 get 'help' => 'pages#help'
 get '/about' => 'pages#about'
 
-root 'pages#home'
+root 'todos#index'
 
 end
